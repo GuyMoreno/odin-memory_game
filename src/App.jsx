@@ -61,6 +61,8 @@ function App() {
 
     // Update state with final list
     setCards(pokemonDetails);
+
+    setCards(prev => [...prev].sort(() => Math.random() - 0.5));
   };
 
   fetchPokemons();
